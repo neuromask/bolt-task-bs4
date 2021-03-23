@@ -8,7 +8,10 @@
 
 ## Project & Task
 
-### Task description from Bolt
+### Description
+
+Signup form created with Webpack JavaScript module bundler and Bootstrap as font-end framework.
+### Task
 
 Your task is to implement a new driver landing page design. You can find the image with the new design in the attachment. We expect both desktop and mobile design. Please use Bootstrap 4 to implement the design.
 
