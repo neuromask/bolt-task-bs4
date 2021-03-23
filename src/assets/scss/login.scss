@@ -1,0 +1,174 @@
+$font-normal: euclidCircularB, Arial, sans-serif;
+$font-medium: euclidCircularB-Medium, Arial, sans-serif;
+$font-bold: euclidCircularB-SemiBold, Arial, sans-serif;
+
+@font-face {
+  font-family: "euclidCircularB";
+  src: url("../fonts/EuclidCircularB-Light.woff2") format("woff2"),
+         url("../fonts/EuclidCircularB-Light.woff") format("woff");
+ }
+ @font-face {
+  font-family: "euclidCircularB-Medium";
+  src: url("../fonts/EuclidCircularB-Medium.woff2") format("woff2"),
+         url("../fonts/EuclidCircularB-Medium.woff") format("woff");
+ }
+ @font-face {
+  font-family: "euclidCircularB-SemiBold";
+  src: url("../fonts/EuclidCircularB-SemiBold.woff2") format("woff2"),
+         url("../fonts/EuclidCircularB-SemiBold.woff") format("woff");
+ }
+
+body {
+  font-family: $font-normal;
+  font-size:16px;
+}
+
+/* Typography */
+a {
+  cursor: pointer; 
+}
+a:hover {
+  text-decoration: none;
+}
+
+nav {
+  & #logoHolder svg {
+    width: 90px;
+    height:50px;
+    text-align: left;
+    vertical-align: top;
+  }
+  & #logoHolder svg use svg {
+    width: 100px;
+    height:50px;
+    text-align: left;
+    vertical-align: top;
+  }
+  & .logo-color {
+    fill:#fff;
+  }
+  & .dropdown-toggle::after {
+    display: none; 
+  }
+  & .dropdown-menu.show {
+    border: 1px lightgrey solid;
+    padding: 1rem;
+    background: white;
+    margin: 1rem 1rem 0 0;
+  }
+  & #dropdown_title {
+    margin: 0 0 0 0.5rem;
+  }
+  & .btn-sm {
+    font-family: $font-bold;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.675rem;
+  }
+  span {
+    margin: .6em;
+    display: inline-block; 
+  }
+  & .text-sm {
+    font-size: 0.8rem;
+  }
+  @include media-breakpoint-down(sm) { 
+    & .logo-color {
+      fill:#000;
+    }
+    & .account-text, #dropdown-title {
+      display: none;
+    }
+    & .menu-items {
+      flex-direction: row-reverse;
+      justify-content: flex-start!important;
+    }
+  }
+}
+
+/* Block image bg */
+#image-block {
+
+  & .bg-image {
+    background: url(../img/bgimage_drivers.jpg) no-repeat;
+    background-size: cover; 
+  }
+
+  & h1 {
+    font-family: $font-medium;
+    font-size: 3.2rem; 
+  }
+  & p {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  &  .overlay {
+    opacity: 0.5; 
+  }
+}
+
+/* Form block */
+#form-block {
+  & .text-sm {
+    font-size: 0.8rem;
+  }
+  & .form-group {
+    margin-bottom: 0.7rem;
+  }
+  & label {
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-family: $font-medium;
+  }
+  & .form-check-label {
+    font-family: $font-normal;
+    font-size: 0.9rem;
+    margin-left: 0.8rem;
+
+    & a {
+      text-decoration: underline;
+    }
+  }
+  & h2 {
+    font-family: $font-medium;
+  }
+  & .big-checkbox {
+    width: 1.2rem; height: 1.2rem;
+  }
+  & .btn-primary {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: $font-medium;
+    padding: 0.7rem 1rem;
+  }
+  @include media-breakpoint-down(sm) { 
+    .form-wrapper {
+      margin-bottom: -4rem;
+    }
+    
+  }
+  /* Portrait phones and smaller */
+  @media (max-width: 320px) {
+    & .form-group {
+      margin-bottom: 0rem;
+    }
+    & h2 {
+      font-size: 1.6rem;
+    }
+    & p, label, .form-check-label {
+      font-size: 0.8rem;
+    }
+    & small, .text-sm {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
