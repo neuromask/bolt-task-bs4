@@ -18093,17 +18093,6 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/assets/img/logo.svg":
-/*!*********************************!*\
-  !*** ./src/assets/img/logo.svg ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "../img/logo.svg";
-
-/***/ }),
-
 /***/ "./src/assets/js/index.js":
 /*!********************************!*\
   !*** ./src/assets/js/index.js ***!
@@ -18117,24 +18106,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @scss/styles.scss */ "./src/assets/scss/styles.scss");
 /* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_logo_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @img/logo.svg */ "./src/assets/img/logo.svg");
-/* harmony import */ var _img_logo_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_logo_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var bootstrap_icons_font_bootstrap_icons_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap-icons/font/bootstrap-icons.css */ "./node_modules/bootstrap-icons/font/bootstrap-icons.css");
+/* harmony import */ var bootstrap_icons_font_bootstrap_icons_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_icons_font_bootstrap_icons_css__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
-__webpack_require__(/*! bootstrap-icons/font/bootstrap-icons.css */ "./node_modules/bootstrap-icons/font/bootstrap-icons.css");
-
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-
-var filename = _img_logo_svg__WEBPACK_IMPORTED_MODULE_2___default.a.substring(_img_logo_svg__WEBPACK_IMPORTED_MODULE_2___default.a.lastIndexOf('/') + 1);
-$('#logoHolder').html("<svg><use xlink:href='assets/img/".concat(filename, "#img'></use></svg>"));
-var message = "Hello Webpack";
-console.log(" Message is: ".concat(message));
-$('.dropdown-toggle').dropdown();
-$('#lang-dropdown-items li').on('click', function () {
-  $('#dropdown-title').html($(this).find('a').html());
-});
+/*
+import logoImg from "@img/logo.svg";
+let filename = logoImg.substring(logoImg.lastIndexOf('/') + 1);
+document.getElementById('logoHolder').innerHTML = `<svg><use xlink:href='assets/img/${filename}#img'></use></svg>`;
+*/
+//let message = "Hello Webpack";
+//console.log(` Message is: ${message}`);
 
 /***/ }),
 

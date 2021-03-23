@@ -32,20 +32,11 @@ a:hover {
 }
 
 nav {
-  & #logoHolder svg {
-    width: 90px;
-    height:50px;
-    text-align: left;
-    vertical-align: top;
-  }
-  & #logoHolder svg use svg {
+  & #logoHolder {
     width: 100px;
     height:50px;
-    text-align: left;
-    vertical-align: top;
-  }
-  & .logo-color {
-    fill:#fff;
+    background: url(../img/logo.svg) no-repeat;
+    background-size: fit; 
   }
   & .dropdown-toggle::after {
     display: none; 
@@ -72,8 +63,8 @@ nav {
     font-size: 0.8rem;
   }
   @include media-breakpoint-down(sm) { 
-    & .logo-color {
-      fill:#000;
+    & #logoHolder {
+      background: url(../img/logo-black.svg) no-repeat;
     }
     & .account-text, #dropdown-title {
       display: none;

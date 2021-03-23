@@ -9647,20 +9647,11 @@ a {
 a:hover {
   text-decoration: none; }
 
-nav #logoHolder svg {
-  width: 90px;
-  height: 50px;
-  text-align: left;
-  vertical-align: top; }
-
-nav #logoHolder svg use svg {
+nav #logoHolder {
   width: 100px;
   height: 50px;
-  text-align: left;
-  vertical-align: top; }
-
-nav .logo-color {
-  fill: #fff; }
+  background: url(../img/logo.svg) no-repeat;
+  background-size: fit; }
 
 nav .dropdown-toggle::after {
   display: none; }
@@ -9687,8 +9678,8 @@ nav .text-sm {
   font-size: 0.8rem; }
 
 @media (max-width: 767.98px) {
-  nav .logo-color {
-    fill: #000; }
+  nav #logoHolder {
+    background: url(../img/logo-black.svg) no-repeat; }
   nav .account-text, nav #dropdown-title {
     display: none; }
   nav .menu-items {
