@@ -24,7 +24,7 @@ Created using [Webpack 4](https://webpack.js.org/) module bundler:
 
 ## Project & Task
 
-Task fromBolt: Your task is to implement a new driver landing page design. You can find the image with the new design in the attachment. We expect both desktop and mobile design. Please use Bootstrap 4 to implement the design.
+Task from Bolt: Your task is to implement a new driver landing page design. You can find the image with the new design in the attachment. We expect both desktop and mobile design. Please use Bootstrap 4 to implement the design.
 
 ### Commands
 
