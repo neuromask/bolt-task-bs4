@@ -32,11 +32,12 @@ a:hover {
 }
 
 nav {
-  & #logoHolder {
+  & .logo-holder {
     width: 100px;
     height:50px;
-    background: url(../img/logo.svg) no-repeat;
-    background-size: fit; 
+    background-image: url('../img/taxify-logo-white.svg');
+    background-repeat:  no-repeat;
+    background-size: contain; 
   }
   & .dropdown-toggle::after {
     display: none; 
@@ -63,8 +64,8 @@ nav {
     font-size: 0.8rem;
   }
   @include media-breakpoint-down(sm) { 
-    & #logoHolder {
-      background: url(../img/logo-black.svg) no-repeat;
+    & .logo-holder {
+      background-image: url('../img/taxify-logo-black.svg');
     }
     & .account-text, #dropdown-title {
       display: none;
