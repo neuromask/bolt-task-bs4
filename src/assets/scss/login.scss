@@ -87,8 +87,10 @@ nav {
 #image-block {
 
   & .bg-image {
-    background: url(../img/bgimage_drivers.jpg) no-repeat;
-    background-size: cover; 
+    background: url('../img/bgimage_drivers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   & h1 {
