@@ -5,7 +5,7 @@
 
 ## Demo
 
-[DEMO](https://nuforms.com/demo/bolt/)
+[https://nuforms.com/demo/bolt/](https://nuforms.com/demo/bolt/)
 
 
 Created using [Webpack 4](https://webpack.js.org/) module bundler:
